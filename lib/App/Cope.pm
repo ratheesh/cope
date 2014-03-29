@@ -1,7 +1,7 @@
 #!/usr/bin/env perl
 package App::Cope;
 use strict;
-use warnings;
+no if $] >= 5.018, 'warnings', "experimental::smartmatch";
 use 5.010_000;
 use Carp;
 

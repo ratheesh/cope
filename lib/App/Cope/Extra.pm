@@ -1,7 +1,7 @@
 #!/usr/bin/env perl
 package App::Cope::Extra;
 use strict;
-use warnings;
+no if $] >= 5.018, warnings => "experimental";
 use 5.010_000;
 
 =head1 NAME
